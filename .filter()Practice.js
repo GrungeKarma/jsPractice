@@ -30,6 +30,6 @@ const hasSister = friends.filter((friend) => {
 	if (friend.sister === true) {
 		console.log(`${friend.name} : Ayyyyy`);
 	} else {
-		console.log(`I guess ${friend.name} is useless`);
+		console.log(`I guess ${friend.name} is useless` + '😝.');
 	}
 });

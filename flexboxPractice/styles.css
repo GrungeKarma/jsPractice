@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: #711A1A;
+  color:lightslategrey;
+  font-size: 30px;
+  font-family: 'Fredericka the Great', cursive;
+
+}
+.navBarContainer{
+  display: flex;
+  height: 50px;
+  background-color: #370606;
+}
+.navContainer{
+  width: 50%;
+  background-color: #370606;
+  justify-content: right;
+}
+.textContent{
+  justify-content: right;
+  height: 100vh;
+  background-color: black;
+  width: auto;
+  ;
+}
+button{
+  background-color: #370606;
+}
+
+.pageContainer{
+  height:inherit;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.gallery{
+  width: 50%;
+  max-width: 50%;
+  max-height: 50%;
+  flex:4 ;
+  justify-self: right;
+  object-fit: fill;
+  justify-content: left;
+  flex-wrap: wrap;
+
+}
+.textContent{
+  background-color: #370606;
+  width: 100%;
+  text-align: left;
+
+  height: 100%;
+  max-width: 50%;
+  float: right;
+
+}
+
+img{
+  max-width: 50%;
+  max-height: auto;
+  background-color: #370606;
+
+}
+div.p{
+  font-size: 10px;
+  text-align: right;
+  color: white;
+}
+.me{
+  justify-content: space-around;
+}
+.footer{
+  bottom: 0;
+}
