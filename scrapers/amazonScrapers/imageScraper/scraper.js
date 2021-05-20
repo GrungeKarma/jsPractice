@@ -30,8 +30,6 @@ amazonImageScraper = (url1, url2, url3) =>{
 
   await page.goto(imageUrl1);
   await page.waitForSelector('#landingImage');
-  //load url and wait for image to load
-
   let element1 = await page.$('#landingImage');
   await element1.screenshot({ path: `${path}/${rand1}.png` });
   //screenshot first image
@@ -40,10 +38,11 @@ amazonImageScraper = (url1, url2, url3) =>{
   await page.waitForSelector('#landingImage');
   let element2 = await page.$('#landingImage');
   await element2.screenshot({ path: `${path}/${rand2}.png` });
-  await page.goto(imageUrl3);
+
   //screenshot second image
 
-await page.waitForSelector('#landingImage');
+  await page.goto(imageUrl3);
+  await page.waitForSelector('#landingImage');
   let element3 = await page.$('#landingImage');
   await element3.screenshot({ path: `${path}/${rand3}.png` });
   //screenshot third image
